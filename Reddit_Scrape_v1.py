@@ -12,14 +12,14 @@ except:
 
 
 
-red_account = praw.Reddit (client_id = f'{cid}',
-                           client_secret = f'{sec}',
+red_account = praw.Reddit (client_id = cid.strip(),
+                           client_secret = sec.strip(),
                            user_agent ='Superb-Twist-3912')
 
 
 usub = input('What sub are you interested in?: ')
 
-
+n
 sub = red_account.subreddit(f'{usub}')
 
 for post in sub.top(limit=5):
