@@ -19,7 +19,7 @@ red_account = praw.Reddit (client_id = cid.strip(),
 
 usub = input('What sub are you interested in?: ')
 
-n
+
 sub = red_account.subreddit(f'{usub}')
 
 for post in sub.top(limit=5):
